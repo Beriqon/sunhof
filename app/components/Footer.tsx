@@ -92,7 +92,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <img 
-                src="/logo/sunhoflogo2.png" 
+                src="/logo/sunhoflogodef.jpg" 
                 alt="Sunhof Logo" 
                 className="w-[100px] h-[100px] rounded-full object-cover"
               />

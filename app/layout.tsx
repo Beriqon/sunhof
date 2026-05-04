@@ -17,6 +17,11 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Sunhof - Zonnebank Studio",
   description: "Welkom bij Sunhof, uw zonnebank studio met 4 zonnebanken en een Sunpilot stoel. Geniet van een natuurlijke, gezonde kleur het hele jaar door.",
+  icons: {
+    icon: "/logo/sunhoflogodef.jpg",
+    shortcut: "/logo/sunhoflogodef.jpg",
+    apple: "/logo/sunhoflogodef.jpg",
+  },
 };
 
 export default function RootLayout({

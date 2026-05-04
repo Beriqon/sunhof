@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import MobileContactDropdown from './components/MobileContactDropdown';
+import MobileMenu from './components/MobileMenu';
 import ZontegoedCards from './components/ZontegoedCards';
 import Link from 'next/link';
 
@@ -13,7 +14,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 ml-8 md:ml-12 lg:ml-16">
               <img 
-                src="/logo/sunhoflogo2.png" 
+                src="/logo/sunhoflogodef.jpg" 
                 alt="Sunhof Logo" 
                 className="w-[60px] h-[60px] rounded-full object-cover"
               />
@@ -23,13 +24,9 @@ export default function Home() {
               </div>
             </Link>
             <Navigation />
-            <div className="md:hidden flex items-center gap-3">
+            <div className="relative z-20 flex items-center gap-3 lg:hidden">
               <MobileContactDropdown />
-              <button className="text-gray-700">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
+              <MobileMenu />
             </div>
           </div>
         </div>
@@ -65,7 +62,7 @@ export default function Home() {
               {/* Primary Button */}
               <Link
                 href="/prijzen"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#7C6CF3] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#B89560] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 <span>Bekijk prijzen</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -157,7 +154,7 @@ export default function Home() {
               <div className="mt-auto flex flex-col sm:flex-row gap-3">
                 <a
                   href="/colmschate"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#7C6CF3] transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#B89560] transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <span>Bekijk locatie</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -240,7 +237,7 @@ export default function Home() {
               <div className="mt-auto flex flex-col sm:flex-row gap-3">
                 <a
                   href="/zandweerd"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#7C6CF3] transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#B89560] transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <span>Bekijk locatie</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -545,7 +542,7 @@ export default function Home() {
           <div className="text-center">
             <Link
               href="/zonnebanken"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#7C6CF3] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#B89560] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               <span>Bekijk alle zonnebanken</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -672,7 +669,7 @@ export default function Home() {
                     href="https://www.google.com/maps/search/?api=1&query=Koggeschip+216+Deventer"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#7C6CF3] transition-all duration-300 shadow-md hover:shadow-lg"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#B89560] transition-all duration-300 shadow-md hover:shadow-lg"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -713,7 +710,7 @@ export default function Home() {
                     href="https://www.google.com/maps/search/?api=1&query=Pieter+de+Hooghstraat+29+Deventer"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#7C6CF3] transition-all duration-300 shadow-md hover:shadow-lg"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#B89560] transition-all duration-300 shadow-md hover:shadow-lg"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />

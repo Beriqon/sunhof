@@ -51,7 +51,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className="hidden md:flex items-center gap-4">
+    <nav className="hidden lg:flex items-center gap-4">
       <div 
         ref={dropdownRef}
         className="relative"
@@ -109,7 +109,7 @@ export default function Navigation() {
         onMouseLeave={handleContactMouseLeave}
       >
         <button 
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#D4A86A] text-white text-sm font-semibold rounded-lg hover:bg-[#7C6CF3] transition-all duration-300 shadow-md hover:shadow-lg"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#D4A86A] text-white text-sm font-semibold rounded-lg hover:bg-[#B89560] transition-all duration-300 shadow-md hover:shadow-lg"
           onClick={() => setIsContactOpen(!isContactOpen)}
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

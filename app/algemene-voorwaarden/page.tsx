@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import MobileContactDropdown from "../components/MobileContactDropdown";
+import MobileMenu from "../components/MobileMenu";
 
 export default function AlgemeneVoorwaardenPage() {
   return (
@@ -12,7 +13,7 @@ export default function AlgemeneVoorwaardenPage() {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 ml-8 md:ml-12 lg:ml-16">
               <img 
-                src="/logo/sunhoflogo2.png" 
+                src="/logo/sunhoflogodef.jpg" 
                 alt="Sunhof Logo" 
                 className="w-[60px] h-[60px] rounded-full object-cover"
               />
@@ -22,13 +23,9 @@ export default function AlgemeneVoorwaardenPage() {
               </div>
             </Link>
             <Navigation />
-            <div className="md:hidden flex items-center gap-3">
+            <div className="relative z-20 flex items-center gap-3 lg:hidden">
               <MobileContactDropdown />
-              <button className="text-gray-700">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
+              <MobileMenu />
             </div>
           </div>
         </div>

@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import MobileContactDropdown from "../components/MobileContactDropdown";
+import MobileMenu from "../components/MobileMenu";
 
 export default function ZandweerdPage() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
@@ -47,7 +49,7 @@ export default function ZandweerdPage() {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
               <img 
-                src="/logo/sunhoflogo2.png" 
+                src="/logo/sunhoflogodef.jpg" 
                 alt="Sunhof Logo" 
                 className="w-[60px] h-[60px] rounded-full object-cover"
               />
@@ -57,11 +59,10 @@ export default function ZandweerdPage() {
               </div>
             </Link>
             <Navigation />
-            <button className="md:hidden text-gray-700">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            <div className="relative z-20 flex items-center gap-3 lg:hidden">
+              <MobileContactDropdown />
+              <MobileMenu />
+            </div>
           </div>
         </div>
       </header>
@@ -530,7 +531,7 @@ export default function ZandweerdPage() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <a
                     href="tel:0570745985"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#7C6CF3] transition-all duration-300 shadow-md hover:shadow-lg"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#D4A86A] text-white font-semibold rounded-lg hover:bg-[#B89560] transition-all duration-300 shadow-md hover:shadow-lg"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
