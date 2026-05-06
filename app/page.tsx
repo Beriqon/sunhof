@@ -295,7 +295,7 @@ export default function Home() {
               </div>
               <div className="mb-4 flex-grow">
                 <div className="text-3xl md:text-4xl font-bold text-[#D4A86A] mb-2">
-                  €17,50
+                  €18,50
                 </div>
                 <p className="text-sm text-gray-600">Vanaf prijs</p>
               </div>
@@ -311,7 +311,7 @@ export default function Home() {
               </div>
               <div className="mb-4 flex-grow">
                 <div className="text-3xl md:text-4xl font-bold text-[#D4A86A] mb-2">
-                  €11,50
+                  €12,50
                 </div>
                 <p className="text-sm text-gray-600">Vanaf prijs</p>
               </div>
@@ -327,7 +327,7 @@ export default function Home() {
               </div>
               <div className="mb-4 flex-grow">
                 <div className="text-3xl md:text-4xl font-bold text-[#D4A86A] mb-2">
-                  €13,50
+                  €14,50
                 </div>
                 <p className="text-sm text-gray-600">Vanaf prijs</p>
               </div>

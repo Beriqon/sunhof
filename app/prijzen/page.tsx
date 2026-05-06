@@ -8,13 +8,13 @@ import ZontegoedCards from "../components/ZontegoedCards";
 export default function PrijzenPage() {
   // Starting prices per bed (tot 20 minuten)
   const startingPrices = [
-    { bed: "Lightvision", price: "€17,50" },
-    { bed: "Prestige 1600", price: "€16,50" },
-    { bed: "Prestige 1400", price: "€15,50" },
-    { bed: "Prestige 1100", price: "€14,50" },
-    { bed: "Excellence 800", price: "€13,50" },
-    { bed: "Affinity 600", price: "€12,50" },
-    { bed: "Sunpilot", price: "€11,50" },
+    { bed: "Lightvision", price: "€18,50" },
+    { bed: "Prestige 1600", price: "€17,50" },
+    { bed: "Prestige 1400", price: "€16,50" },
+    { bed: "Prestige 1100", price: "€15,50" },
+    { bed: "Excellence 800", price: "€14,50" },
+    { bed: "Affinity 600", price: "€13,50" },
+    { bed: "Sunpilot", price: "€12,50" },
   ];
 
   return (

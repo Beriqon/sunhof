@@ -42,7 +42,7 @@ export default function ProductenPage() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10 w-full max-w-[1200px]">
           <div className="max-w-3xl mx-auto text-center space-y-5">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-2xl">
-              Zonneproducten
+              Zonnebank producten
             </h1>
             <p className="text-xl md:text-2xl text-white/95 leading-relaxed drop-shadow-lg">
               Professionele bruiningsversnellers en verzorgingsproducten voor tijdens en na het zonnen. Verkrijgbaar in onze studio's met persoonlijk advies.
@@ -55,7 +55,7 @@ export default function ProductenPage() {
       <section className="py-16 md:py-20 bg-white border-t border-gray-200/50">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-[1200px]">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-14 md:mb-20 text-center text-[#1F1F1F] leading-tight">
-            Waarom zonneproducten?
+            Waarom zonnebank producten?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20">
             {/* Point 1 */}
@@ -205,7 +205,7 @@ export default function ProductenPage() {
                 <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src="/images/productsunhof.jpg" 
-                    alt="Zonneproducten Sunhof"
+                    alt="Zonnebank producten Sunhof"
                     className="w-full h-full object-cover"
                   />
                 </div>
